@@ -1,0 +1,9 @@
+{
+  "name": "gruzauth",
+  "version": "1.0.0",
+  "description": "The authentication package to make connecting to gruzservices easier",
+  "main": "index.ts",
+  "repository": "https://github.com/Stephen10121/gruzauth.git",
+  "author": "Stephen Gruzin <stephengrzn@gmail.com>",
+  "license": "MIT"
+}
