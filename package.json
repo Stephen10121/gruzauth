@@ -1,6 +1,6 @@
 {
   "name": "gruzauth",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The authentication package to make connecting to gruzservices easier",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -11,9 +11,14 @@
     "typescript": "^4.8.4"
   },
   "scripts": {
-    "build" : "tsc",
-    "prepare" : "npm run build"
+    "build": "tsc",
+    "prepare": "npm run build"
   },
-  "files": ["lib/**/*"],
-  "keywords": ["gruzservices", "authentication"]
+  "files": [
+    "lib/**/*"
+  ],
+  "keywords": [
+    "gruzservices",
+    "authentication"
+  ]
 }
