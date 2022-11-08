@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "The authentication package to make connecting to gruzservices easier",
   "main": "lib/index.js",
-  "types": "lib/index.t.ts",
+  "types": "lib/index.d.ts",
   "repository": "https://github.com/Stephen10121/gruzauth.git",
   "author": "Stephen Gruzin <stephengrzn@gmail.com>",
   "license": "MIT",
