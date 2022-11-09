@@ -1,6 +1,6 @@
 {
   "name": "gruzauth",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "The authentication package to make connecting to gruzservices easier",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
