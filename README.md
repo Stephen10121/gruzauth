@@ -26,4 +26,10 @@ then use the function like this:
 const request = authenticationPopup("post server", "socket id");
 ```
 
-request will return an object telling you if an error occured. If an error occures, there will also be an error message explaining what went wrong.
+request will return an object telling you if an error occured. If an error occures, there will also be an error message explaining what went wrong. If an error doesnt occur, run the window open command.
+
+```
+if (request.open) {
+    request.open();
+}
+```

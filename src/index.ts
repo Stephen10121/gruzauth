@@ -1,6 +1,7 @@
 type ReturnVal = {
     error: boolean;
     errorMessage?: string;
+    trigger?: () => boolean;
 }
 //errorMessage: `Post server has to be secure (https). '${urlChecker.protocol}' is not allowed`
 export default function authenticationPopup(post_server: string, socket_id: string): ReturnVal {
@@ -35,18 +36,13 @@ export default function authenticationPopup(post_server: string, socket_id: stri
     const systemZoom = width / window.screen.availWidth;
     const left = (width - 520) / 2 / systemZoom + dualScreenLeft;
     const top = (height - 570) / 2 / systemZoom + dualScreenTop;
-    window.open(
-        url,
-        "Authenticate",
-        `
-        scrollbars=yes,
-        width=${520 / systemZoom}, 
-        height=${570 / systemZoom}, 
-        top=${top}, 
-        left=${left}
-        `
-    );
+
+    function open() {
+        window.open(url, "Authenticate", `scrollbars=yes, width=${520 / systemZoom}, height=${570 / systemZoom}, top=${top}, left=${left}`);
+        return true;
+    }
     return {
+        trigger: open,
         error: false
     }
 }
