@@ -6,12 +6,7 @@ type ReturnVal = {
 //errorMessage: `Post server has to be secure (https). '${urlChecker.protocol}' is not allowed`
 export default function authenticationPopup(post_server: string, socket_id: string): ReturnVal {
     try {
-        const urlChecker = new URL(post_server);
-        if (urlChecker.protocol !== "https:") {
-            return {
-                error: false
-            }
-        }
+        new URL(post_server);
     } catch(err) {
         return {
             error: true,
